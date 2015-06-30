@@ -21,6 +21,8 @@
 		30D6E42B1B428CBA00A5AA28 /* NSData+Base64Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D6E4231B428CBA00A5AA28 /* NSData+Base64Additions.m */; };
 		30D6E42C1B428CBA00A5AA28 /* NSStream+SKPSMTPExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D6E4251B428CBA00A5AA28 /* NSStream+SKPSMTPExtensions.m */; };
 		30D6E42D1B428CBA00A5AA28 /* SKPSMTPMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 30D6E4271B428CBA00A5AA28 /* SKPSMTPMessage.m */; };
+		30D6E4321B42A05A00A5AA28 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 30D6E4301B42A05A00A5AA28 /* LICENSE */; };
+		30D6E4331B42A05A00A5AA28 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 30D6E4311B42A05A00A5AA28 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,8 @@
 		30D6E4261B428CBA00A5AA28 /* SKPSMTPMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SKPSMTPMessage.h; sourceTree = "<group>"; };
 		30D6E4271B428CBA00A5AA28 /* SKPSMTPMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SKPSMTPMessage.m; sourceTree = "<group>"; };
 		30D6E42E1B428D2C00A5AA28 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = NKCrashReport/Info.plist; sourceTree = SOURCE_ROOT; };
+		30D6E4301B42A05A00A5AA28 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../../../LICENSE; sourceTree = "<group>"; };
+		30D6E4311B42A05A00A5AA28 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../../../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +131,8 @@
 			children = (
 				30D6E41B1B428CBA00A5AA28 /* NKCrashReport.h */,
 				30D6E41C1B428CBA00A5AA28 /* NKCrashReport.m */,
+				30D6E4301B42A05A00A5AA28 /* LICENSE */,
+				30D6E4311B42A05A00A5AA28 /* README.md */,
 				30D6E41D1B428CBA00A5AA28 /* SMTPLibrary */,
 			);
 			name = NKCrashReport;
@@ -207,6 +213,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30D6E4321B42A05A00A5AA28 /* LICENSE in Resources */,
 				30D6E3FC1B428C9700A5AA28 /* Default@2x.png in Resources */,
 				30D6E3FD1B428C9700A5AA28 /* Images.xcassets in Resources */,
 				30D6E3F91B428C9700A5AA28 /* Default-568h@2x.png in Resources */,
@@ -224,6 +231,7 @@
 			files = (
 				30D6E42C1B428CBA00A5AA28 /* NSStream+SKPSMTPExtensions.m in Sources */,
 				30D6E4291B428CBA00A5AA28 /* Base64Transcoder.m in Sources */,
+				30D6E4331B42A05A00A5AA28 /* README.md in Sources */,
 				30D6E42B1B428CBA00A5AA28 /* NSData+Base64Additions.m in Sources */,
 				30D6E4281B428CBA00A5AA28 /* NKCrashReport.m in Sources */,
 				30D6E42D1B428CBA00A5AA28 /* SKPSMTPMessage.m in Sources */,

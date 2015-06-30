@@ -16,15 +16,14 @@ http://nanoka.wpcloud.net
   
 使用方法
 -----
-AppDelegate.m
+クラッシュレポートを送信したいクラスでヘッダーを登録
 ```
-#import "AppDelegate.h"
 #import  "NKCrashReport.h"
+```
 
-@implementation AppDelegate
-
--(BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
+シングルトンでインスタンスを取得してsendCrashExceptionFromEmailメソッドで送信
+※シングルトンでインスタンスの生成が行われた時にクラッシュレポートの保存準備ができるのでクラッシュレポートの送信自体はどこで呼び出しても大丈夫ですが、インスタンスの生成は起動時に行ってください。
+```
     //クラッシュレポートがあれば指定のメールアカウントから指定のアドレスにクラッシュレポートを送信する
     [[NKCrashReport sharedInstance] sendCrashExceptionFromEmail:送信者メールアカウント
                                                        fromHost:送信者メールサーバーホスト
@@ -41,6 +40,4 @@ AppDelegate.m
                                                         }
                                                     }
     ];
-
-    〜〜
 ```
