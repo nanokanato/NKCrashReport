@@ -18,9 +18,14 @@ http://nanoka.wpcloud.net
 -----
 AppDelegate.m
 ```
+#import "AppDelegate.h"
 #import  "NKCrashReport.h"
-```
-```
+
+@implementation AppDelegate
+
+-(BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    //クラッシュレポートがあれば指定のメールアカウントから指定のアドレスにクラッシュレポートを送信する
     [[NKCrashReport sharedInstance] sendCrashExceptionFromEmail:送信者メールアカウント
                                                        fromHost:送信者メールサーバーホスト
                                                          fromID:ホストにログインするユーザーID
@@ -36,4 +41,6 @@ AppDelegate.m
                                                         }
                                                     }
     ];
+
+    〜〜
 ```
